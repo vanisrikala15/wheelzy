@@ -1,7 +1,7 @@
 // src/components/Navbar.js
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png"; // Make sure your logo is in src/assets/
+import logo from "../assets/logo.jpg"; // Make sure your logo is in src/assets/
 
 import "./Navbar.css";
 

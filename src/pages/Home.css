@@ -1,78 +1,113 @@
 /* src/pages/Home.css */
 
 .home-container {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .bg-video {
-    position: fixed; /* 🛠️ Fixed position */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1; /* Push it behind content */
-  }
-  
-  .overlay-content {
-    position: relative;
-    z-index: 1;
-    color: rgb(255, 255, 255);
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-  }
-  
-  .search-form {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 10px;
-    display: inline-block;
-    width: 100%;
-    max-width: 700px;
-  }
-  
-  .search-form input,
-  .search-form label,
-  .search-form button {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    font-size: 16px;
-  }
-  
-  .search-form input[type="text"],
-  .search-form input[type="date"],
-  .search-form input[type="time"] {
-    padding: 10px 1px;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  .search-form button {
-    padding: 12px;
-    background-color: #ffc107;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .date-group {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-  }
-  
-  .date-group > div {
-    flex: 1;
-  }
-  
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-image {
+  background-image: url("../assets/bgp.jpg"); /* Set the first image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 100vh; /* Full height for the first image */
+}
+
+.bottom-image {
+  background-image: url("../assets/bottom.jpg"); /* Set the second image */
+  background-size: contain; /* Adjust size as needed */
+  background-position: center; /* Center the second image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 100vh; /* Set height for the second image */
+  width: 100%; /* Full width */
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 100vh;
+  text-align: left;
+  width: 30%;
+}
+
+.search-form {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.search-form input,
+.search-form label,
+.search-form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.search-form input[type="text"],
+.search-form input[type="date"],
+.search-form input[type="time"] {
+  padding: 10px 1px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-form button {
+  padding: 12px;
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.date-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.date-group > div {
+  flex: 1;
+}
+
+.trending-offers {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Padding around the text */
+  font-size: 24px; /* Font size for the text */
+  width: 100%; /* Full width */
+}
+
+.offers-container {
+  display: flex; /* Use flexbox to arrange items in a row */
+  justify-content: space-between; /* Space items evenly */
+  margin-top: 20px; /* Add some space above the offers */
+}
+
+.offer {
+  background-color: rgba(255, 255, 255, 0.8); /* Light background for offers */
+  color: black; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Padding around the text */
+  flex: 1; /* Allow each offer to grow equally */
+  margin: 0 10px; /* Add margin between offers */
+  border-radius: 5px; /* Rounded corners */
+}

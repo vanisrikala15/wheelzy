@@ -1,0 +1,150 @@
+.car-details-page {
+  display: flex;
+  padding: 20px;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.left-container {
+  flex: 2;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.car-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.car-type {
+  font-size: 18px;
+  color: #555;
+  margin: 0;
+}
+
+.car-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.car-detail-item {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.car-details p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.car-details-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.car-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.price-details {
+  margin-top: 20px;
+}
+
+.price-details h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.price-item1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+}
+.price-item3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #333;
+}
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price-item1 span {
+  color: #333;
+}
+
+.total-price {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.reserve-button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.reserve-button:hover {
+  background-color: #4a4e51;
+}
+
+.free-cancellation {
+  font-size: 14px;
+  color: #168f16;
+}
+
+.pay-at-pickup {
+  font-size: 14px;
+  color: #151c15;
+}
+
+.great-deal {
+  background-color: #067b0a;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  width: 8%;
+}
